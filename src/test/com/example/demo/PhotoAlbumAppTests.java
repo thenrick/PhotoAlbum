@@ -7,16 +7,35 @@ public class PhotoAlbumAppTests {
 	 
 	@Test
 	public void displayPhotoInfo() {
-		String[] args = {"2"};
-		Photo[] photo = PhotoAlbumApp.getPhotoArray(args);
-		assert(photo != null);
-		PhotoAlbumApp.displayPhotoInfo(photo);
+		String albumId = "2";
+		Photo[] photos = PhotoAlbumApp.getPhotoArray(albumId);
+		assert(photos != null);
+		PhotoAlbumApp.displayPhotoInfo(photos);
+		
+		albumId = "3";
+		photos = PhotoAlbumApp.getPhotoArray(albumId);
+		assert(photos != null);
+		PhotoAlbumApp.displayPhotoInfo(photos);
+
+		albumId = "4";
+		photos = PhotoAlbumApp.getPhotoArray(albumId);
+		assert(photos != null);
+		PhotoAlbumApp.displayPhotoInfo(photos);
 	}
 
 	@Test
 	public void getPhotoArray() {
-		String[] args = {"2"};
-		Photo[] photo = PhotoAlbumApp.getPhotoArray(args);
-		assert(photo != null);
+		String albumId = "2";
+		Photo[] photos = PhotoAlbumApp.getPhotoArray(albumId);
+		assert(photos != null);
+		
+		albumId = "3";
+		photos = PhotoAlbumApp.getPhotoArray(albumId);
+		assert(photos != null);
+		
+		albumId = "4";
+		photos = PhotoAlbumApp.getPhotoArray(albumId);
+		assert(photos != null);
 	}
 }
+
