@@ -1,11 +1,8 @@
 package com.example.demo;
 
-import org.junit.Test;
-
 
 public class PhotoAlbumAppTests {
 	 
-	@Test
 	public void displayPhotoInfo() {
 		String albumId = "2";
 		Photo[] photos = PhotoAlbumApp.getPhotoArray(albumId);
@@ -23,7 +20,6 @@ public class PhotoAlbumAppTests {
 		PhotoAlbumApp.displayPhotoInfo(photos);
 	}
 
-	@Test
 	public void getPhotoArray() {
 		String albumId = "2";
 		Photo[] photos = PhotoAlbumApp.getPhotoArray(albumId);
